@@ -34,7 +34,8 @@ This website is a product of my **creative vision**, built with the **technical 
 
 ## 📂 Project Structure
 
-dikshant-agrawal-portfolio-website/
+```bash
+shadow-glow-profile/
 ├── public/                  # Static assets like images
 │   └── profile.jpg          # Example image file
 ├── src/                     # Source code
@@ -52,6 +53,8 @@ dikshant-agrawal-portfolio-website/
 ├── package.json             # Project metadata and dependencies
 └── README.md                # You're reading it!
 
+```
+
 ---
 
 ## 💬 Credits
@@ -68,6 +71,3 @@ dikshant-agrawal-portfolio-website/
 - Add animations and more interactivity
 
 ---
-
-
-
