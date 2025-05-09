@@ -20,7 +20,7 @@ const ProfilePhoto = () => {
         <img 
           src="/lovable-uploads/589f51f9-f273-41e9-9f01-56d0ff2c81bd.png" 
           alt="Dikshant Agrawal" 
-          className="profile-image w-48 h-48 md:w-56 md:h-56 object-cover"
+          className="profile-image w-64 h-64 md:w-80 md:h-80 object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
           <div className="text-white text-sm bg-black/50 p-2 rounded">Click for bio</div>
