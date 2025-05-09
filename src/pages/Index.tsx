@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import NavBar from "@/components/NavBar";
 import ProfilePhoto from "@/components/ProfilePhoto";
@@ -6,6 +7,7 @@ import EducationCard from "@/components/EducationCard";
 import ExperienceCard from "@/components/ExperienceCard";
 import SkillCard from "@/components/SkillCard";
 import ContactButton from "@/components/ContactButton";
+import ContactForm from "@/components/ContactForm";
 
 const Index = () => {
   useEffect(() => {
@@ -19,13 +21,11 @@ const Index = () => {
             
             if (title) {
               title.classList.add("animate-fade-in");
-              // Use className instead of style
               title.classList.add("opacity-100");
             }
             
             if (content) {
               content.classList.add("animate-fade-in");
-              // Use className instead of style
               content.classList.add("opacity-100");
             }
           }
@@ -46,74 +46,61 @@ const Index = () => {
     <div className="min-h-screen bg-darkgray-300 text-white">
       <NavBar />
       
-      {/* Hero Section */}
-      <section id="hero" className="min-h-screen flex flex-col justify-center items-center px-6">
-        <div className="text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">
-            Dikshant Agrawal
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8">
-            B.Tech in AI and Data Science
-          </p>
-          
-          <ProfilePhoto />
-          
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <ContactButton 
-              type="github" 
-              value="GitHub" 
-              link="https://github.com" 
-            />
-            <ContactButton 
-              type="linkedin" 
-              value="LinkedIn" 
-              link="https://linkedin.com" 
-            />
-            <ContactButton 
-              type="email" 
-              value="dikshant231@gmail.com" 
-              link="mailto:dikshant231@gmail.com" 
-            />
+      {/* Hero Section - Redesigned with left alignment */}
+      <section id="hero" className="min-h-screen px-6 pt-20 pb-10">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
+            <div className="md:w-1/3">
+              <ProfilePhoto />
+            </div>
+            
+            <div className="md:w-2/3 animate-fade-in space-y-6">
+              <h1 className="text-5xl md:text-6xl font-bold">
+                Dikshant Agrawal
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-300">
+                B.Tech in AI and Data Science
+              </p>
+              
+              <div className="flex flex-wrap gap-3 mt-4">
+                <ContactButton 
+                  type="github" 
+                  value="GitHub" 
+                  link="https://github.com" 
+                />
+                <ContactButton 
+                  type="linkedin" 
+                  value="LinkedIn" 
+                  link="https://linkedin.com" 
+                />
+                <ContactButton 
+                  type="email" 
+                  value="dikshant231@gmail.com" 
+                  link="mailto:dikshant231@gmail.com" 
+                />
+              </div>
+              
+              <div className="mt-6 max-w-2xl">
+                <h2 className="text-2xl font-semibold mb-3">About Me</h2>
+                <div className="space-y-4 text-gray-200">
+                  <p>
+                    I'm an enthusiastic B.Tech student in AI and Data Science at Amrita Vishwa Vidyapeetham.
+                    My passion lies in developing innovative solutions through technology, with a focus on 
+                    real-world applications.
+                  </p>
+                  <p>
+                    With experience in Arduino development, data analysis, and marketing strategy, I bring a 
+                    multidisciplinary approach to my work. I'm particularly interested in projects that make
+                    a positive impact on people's lives.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <a href="#about" className="text-gray-400 hover:text-white transition-colors">
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-6 w-6" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke="currentColor"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M19 14l-7 7m0 0l-7-7m7 7V3" 
-              />
-            </svg>
-          </a>
         </div>
       </section>
       
-      {/* About Section */}
-      <Section id="about" title="About Me">
-        <div className="max-w-3xl mx-auto space-y-6 text-lg">
-          <p>
-            I'm an enthusiastic B.Tech student in AI and Data Science at Amrita Vishwa Vidyapeetham.
-            My passion lies in developing innovative solutions through technology, with a focus on 
-            real-world applications.
-          </p>
-          <p>
-            With experience in Arduino development, data analysis, and marketing strategy, I bring a 
-            multidisciplinary approach to my work. I'm particularly interested in projects that make
-            a positive impact on people's lives.
-          </p>
-        </div>
-      </Section>
-      
-      {/* Education Section */}
+      {/* Education Section - Centered */}
       <Section id="education" title="Education" className="bg-darkgray-400">
         <div className="max-w-3xl mx-auto">
           <EducationCard
@@ -145,7 +132,7 @@ const Index = () => {
         </div>
       </Section>
       
-      {/* Experience Section */}
+      {/* Experience Section - Centered */}
       <Section id="experience" title="Experience">
         <div className="max-w-3xl mx-auto">
           <ExperienceCard
@@ -183,7 +170,7 @@ const Index = () => {
         </div>
       </Section>
       
-      {/* Skills Section */}
+      {/* Skills Section - Properly aligned grid */}
       <Section id="skills" title="Technical Skills" className="bg-darkgray-400">
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <SkillCard
@@ -210,6 +197,16 @@ const Index = () => {
             category="Interests"
             skills={["Badminton", "Formula 1", "Music", "Robotics", "Arduino Designing"]}
           />
+        </div>
+      </Section>
+      
+      {/* Contact Section - New addition */}
+      <Section id="contact" title="Contact Me">
+        <div className="max-w-xl mx-auto">
+          <p className="text-center text-gray-300 mb-8">
+            Feel free to reach out to me if you have any questions or would like to collaborate on a project.
+          </p>
+          <ContactForm />
         </div>
       </Section>
       

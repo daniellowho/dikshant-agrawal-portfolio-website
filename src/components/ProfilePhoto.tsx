@@ -12,7 +12,7 @@ const ProfilePhoto = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="flex justify-center items-center mt-6 mb-10">
+    <div className="flex items-center gap-6">
       <div 
         className="profile-container relative cursor-pointer rounded-full overflow-hidden hover:animate-profile-hover"
         onClick={() => setIsModalOpen(true)}
@@ -20,7 +20,7 @@ const ProfilePhoto = () => {
         <img 
           src="/lovable-uploads/589f51f9-f273-41e9-9f01-56d0ff2c81bd.png" 
           alt="Dikshant Agrawal" 
-          className="profile-image w-48 h-48 object-cover"
+          className="profile-image w-32 h-32 md:w-40 md:h-40 object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
           <div className="text-white text-sm bg-black/50 p-2 rounded">Click for bio</div>
