@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import NavBar from "@/components/NavBar";
 import ProfilePhoto from "@/components/ProfilePhoto";
@@ -20,12 +19,14 @@ const Index = () => {
             
             if (title) {
               title.classList.add("animate-fade-in");
-              title.style.opacity = "1";
+              // Use className instead of style
+              title.classList.add("opacity-100");
             }
             
             if (content) {
               content.classList.add("animate-fade-in");
-              content.style.opacity = "1";
+              // Use className instead of style
+              content.classList.add("opacity-100");
             }
           }
         });

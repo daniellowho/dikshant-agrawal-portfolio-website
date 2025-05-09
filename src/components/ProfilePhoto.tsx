@@ -1,6 +1,12 @@
 
 import { useState } from 'react';
-import { Dialog } from '@/components/ui/dialog';
+import { 
+  Dialog,
+  DialogContent, 
+  DialogHeader,
+  DialogFooter,
+  DialogTitle
+} from '@/components/ui/dialog';
 
 const ProfilePhoto = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -8,7 +14,7 @@ const ProfilePhoto = () => {
   return (
     <div className="flex justify-center items-center mt-6 mb-10">
       <div 
-        className="profile-container" 
+        className="profile-container relative cursor-pointer rounded-full overflow-hidden hover:animate-profile-hover"
         onClick={() => setIsModalOpen(true)}
       >
         <img 
@@ -22,10 +28,10 @@ const ProfilePhoto = () => {
       </div>
       
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <Dialog.Content className="bg-darkgray-300 text-white border-darkgray-100">
-          <Dialog.Header>
-            <Dialog.Title className="text-xl font-bold">About Dikshant Agrawal</Dialog.Title>
-          </Dialog.Header>
+        <DialogContent className="bg-darkgray-300 text-white border-darkgray-100">
+          <DialogHeader>
+            <DialogTitle className="text-xl font-bold">About Dikshant Agrawal</DialogTitle>
+          </DialogHeader>
           
           <div className="py-4 space-y-4">
             <p>
@@ -42,15 +48,15 @@ const ProfilePhoto = () => {
             </p>
           </div>
           
-          <Dialog.Footer>
+          <DialogFooter>
             <button 
               onClick={() => setIsModalOpen(false)}
               className="px-4 py-2 bg-darkgray-100 hover:bg-darkgray-200 text-white rounded-md transition-colors"
             >
               Close
             </button>
-          </Dialog.Footer>
-        </Dialog.Content>
+          </DialogFooter>
+        </DialogContent>
       </Dialog>
     </div>
   );
