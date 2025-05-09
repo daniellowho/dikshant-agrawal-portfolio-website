@@ -33,4 +33,29 @@ This website is a product of my **creative vision**, built with the **technical 
 ---
 
 ## 📂 Project Structure (Simplified)
+/public → Static assets like images
+/src
+├── components → Reusable UI components
+├── pages → Page sections like About, Education, etc.
+├── App.jsx → Main layout file
+└── index.js → React entry point
+
+---
+
+## 💬 Credits
+
+- Built with guidance from **ChatGPT** (aka Lovable 😄)
+- Deployed on [Netlify](https://netlify.com)
+
+---
+
+## 🚧 Future Plans
+
+- Learn React and Tailwind CSS step by step  
+- Rebuild this site from scratch with my own knowledge  
+- Add animations and more interactivity
+
+---
+
+
 
