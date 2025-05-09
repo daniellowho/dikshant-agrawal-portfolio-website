@@ -18,7 +18,7 @@ const ProfilePhoto = () => {
         onClick={() => setIsModalOpen(true)}
       >
         <img 
-          src="/lovable-uploads/589f51f9-f273-41e9-9f01-56d0ff2c81bd.png" 
+          src="https://media.licdn.com/dms/image/v2/D4E03AQFedeG9ThQZwg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731999598751?e=1752105600&v=beta&t=WPQsqVqHLbH2rIy31I5Kk2C6HrTd29w47TKg4vTPMr4" 
           alt="Dikshant Agrawal" 
           className="profile-image w-64 h-64 md:w-80 md:h-80 object-cover"
         />
