@@ -32,13 +32,25 @@ This website is a product of my **creative vision**, built with the **technical 
 
 ---
 
-## 📂 Project Structure (Simplified)
-/public → Static assets like images
-/src
-├── components → Reusable UI components
-├── pages → Page sections like About, Education, etc.
-├── App.jsx → Main layout file
-└── index.js → React entry point
+## 📂 Project Structure
+
+dikshant-agrawal-portfolio-website/
+├── public/                  # Static assets like images
+│   └── profile.jpg          # Example image file
+├── src/                     # Source code
+│   ├── components/          # Reusable React components
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   └── ...              
+│   ├── pages/               # Page sections (About, Education, etc.)
+│   │   ├── About.jsx
+│   │   ├── Education.jsx
+│   │   └── ...
+│   ├── App.jsx              # Root component
+│   └── index.js             # Entry point for React
+├── tailwind.config.js       # Tailwind CSS configuration
+├── package.json             # Project metadata and dependencies
+└── README.md                # You're reading it!
 
 ---
 
