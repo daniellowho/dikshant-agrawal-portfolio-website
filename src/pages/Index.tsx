@@ -66,12 +66,12 @@ const Index = () => {
                 <ContactButton 
                   type="github" 
                   value="GitHub" 
-                  link="https://github.com" 
+                  link="https://github.com/daniellowho" 
                 />
                 <ContactButton 
                   type="linkedin" 
                   value="LinkedIn" 
-                  link="https://linkedin.com" 
+                  link="https://linkedin.com/dikshant-agrawal-profile" 
                 />
                 <ContactButton 
                   type="email" 
