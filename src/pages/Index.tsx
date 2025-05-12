@@ -71,7 +71,7 @@ const Index = () => {
                 <ContactButton 
                   type="linkedin" 
                   value="LinkedIn" 
-                  link="https://linkedin.com/dikshant-agrawal-profile" 
+                  link="https://linkedin.com/in/dikshant-agrawal-profile" 
                 />
                 <ContactButton 
                   type="email" 
